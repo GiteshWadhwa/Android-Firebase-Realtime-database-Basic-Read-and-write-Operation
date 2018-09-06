@@ -35,9 +35,10 @@ public class MainActivity extends AppCompatActivity implements ValueEventListene
     }
     public void submitHeading(View view)
     {
-        String heading =HeadingText.getText().toString();
+       String heading =HeadingInput.getText().toString();
         mHeadingReference.setValue(heading);
         HeadingInput.setText("");
+
     }
     public void onRadioButtonClicked(View view)
     {
